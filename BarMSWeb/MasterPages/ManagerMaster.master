@@ -1,0 +1,144 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="ManagerMaster.master.cs"
+    Inherits="MasterPages_ManagerMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <!-- ************************************************************************ !-->
+    <!-- *****                                                              ***** !-->
+    <!-- *****       ¤ Designed and Developed by  LEADconcept               ***** !-->
+    <!-- *****               http://www.leadconcept.com                     ***** !-->
+    <!-- *****                                                              ***** !-->
+    <!-- ************************************************************************ !-->
+    <title>--:: WEST ::--</title>
+    <link href="../Styles/admin.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" language="javascript" src="../JavaScript/jquery-1.6.2.min.js"></script>
+
+    <script type="text/javascript" language="javascript" src="../JavaScript/jquery-ui-1.8.16.custom.min.js"></script>
+
+    <%--<link href="../Styles/public.css" rel="stylesheet" type="text/css" />--%>
+    <%--<link href="../Styles/HighSlide_Admin.css" rel="stylesheet" type="text/css" />--%>
+    <link href="../Styles/highslide.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/custom-theme/jquery-ui-1.8.16.custom.css" rel="stylesheet"
+        type="text/css" />
+
+    <script type="text/javascript" src="../JavaScript/JQuerPopup/highslide.js"></script>
+
+    <!-- This javascript handles the lightbox -->
+
+    <script type="text/javascript" src="../JavaScript/JQuerPopup/highslide-functionality.js"></script>
+
+    <!-- This javascript handles the lightbox functionality -->
+
+    <script type="text/javascript" src="../JavaScript/JQuerPopup/hide-elements.js"></script>
+
+    <!-- hides the lightboxes on this page -->
+
+    <script type="text/javascript" src="../JavaScript/JQuerPopup/small-lightbox.js"></script>
+
+    <!-- This javascript shows the confirmation message, but it should be activated on postback, not on click. -->
+
+    <script type="text/javascript" src="../JavaScript/JQuerPopup/lightbox-close.js"></script>
+
+    <!-- prevents the page from jumping to the top when lightbox is closed -->
+</head>
+<body class="body_account">
+    <form id="form1" runat="server">
+    <div class="main" style="width: 1215px;">
+        <div class="logo_login">
+            <a href="#"></a>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="topnav">
+            <a id="ankMyAccount" runat="server" href="#">My Account</a><span> . </span><a href="../Managers/UserContract.aspx">
+                My Contract</a><span> . </span><a href="../Managers/ManagerDayOff.aspx">My Work Shifts</a><span>
+                    . </span><a href="../Managers/Payments.aspx">My Payments</a><span> . </span>
+            <a id="ankMessages" runat="server" href="../Managers/Messages.aspx">
+                My Messages</a>
+        </div>
+        <div class="clear_40">
+        </div>
+        <div class="admin_leftmenu">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td class="admin_leftmenu_top">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="admin_leftmenu_center">
+                        <div class="category">
+                            Categories</div>
+                        <div class="clear_10">
+                        </div>
+                        <a href="../Managers/ManageUsers.aspx">
+                            <img src="../images/admin_arrow.png" alt="" />Manage Users</a> <a href="../Managers/ManageWorkshifts.aspx">
+                                <img src="../images/admin_arrow.png" alt="" />Manage Work Shifts</a> <a href="../Managers/ManageSpecialties.aspx">
+                                    <img src="../images/admin_arrow.png" alt="" />Manage Specialties</a>
+                        <a href="../Managers/ManagePositions.aspx">
+                            <img src="../images/admin_arrow.png" alt="" />Manage Positions</a> 
+                            <a href="../Managers/Register.aspx"><img src="../images/admin_arrow.png" alt="" />Special People</a>
+                            <a href="../Managers/Statistics.aspx"><img src="../images/admin_arrow.png" alt="" />Statictics</a>
+                            <%--<a href="../Managers/Messages.aspx">
+                                <img src="../images/admin_arrow.png" alt="" />My Messages</a>--%>
+                        <%--<a href="../Managers/ManageSalary.aspx"> <img src="../images/admin_arrow.png" alt="" />Manage Salary</a> --%>
+                       <%-- <a id="ankMyAccount" runat="server" href="#">
+                            <img src="../images/admin_arrow.png" alt="" />My Account</a>--%>
+                        <div class="clear_10">
+                        </div>
+                        <%--<a href="#">
+                    <img src="../images/logout.png" alt="" />Logout</a>--%>
+                        <asp:LinkButton ID="lnkLogout" runat="server" OnClick="lnkLogout_Click"><img src="../images/logout.png" alt="" />Logout</asp:LinkButton>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="admin_leftmenu_bottom">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="admin_content" style="width: 975px;">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td class="graybox_topleftcorner">
+                    </td>
+                    <td class="graybox_top_bg">
+                    </td>
+                    <td class="graybox_toprightcorner">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="graybox_centerleftbg">
+                    </td>
+                    <td class="graybox_centermiddlebg">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                    <td class="graybox_centerrightbg">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="graybox_bottomleftcorner">
+                    </td>
+                    <td class="graybox_bottom_bg">
+                    </td>
+                    <td class="graybox_bottomrightcorner">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="clear_75">
+    </div>
+    <div class="footer_main">
+        <div class="footer">
+            Copyright © 2011 West. All rights reserved.<br />
+            <span>Designed & Developed by <a href="http://www.leadconcept.com" target="_blank">LEADconcept</a></span></div>
+    </div>
+    </form>
+    </form>
+</body>
+</html>

@@ -1,0 +1,90 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeFile="UserMaster.master.cs" Inherits="MasterPages_UserMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <!-- ************************************************************************ !-->
+    <!-- *****                                                              ***** !-->
+    <!-- *****       ¤ Designed and Developed by  LEADconcept               ***** !-->
+    <!-- *****               http://www.leadconcept.com                     ***** !-->
+    <!-- *****                                                              ***** !-->
+    <!-- ************************************************************************ !-->
+    <title>--:: WEST ::--</title>
+    <link href="../Styles/style.css" rel="stylesheet" type="text/css" />
+    <link href="../Styles/custom-theme/jquery-ui-1.8.16.custom.css" rel="stylesheet"
+        type="text/css" />
+
+    <script type="text/javascript" language="javascript" src="../JavaScript/jquery-1.6.2.min.js"></script>
+
+    <script type="text/javascript" language="javascript" src="../JavaScript/jquery-ui-1.8.16.custom.min.js"></script>
+
+    <script type="text/javascript" src="../JavaScript/JQuerPopup/highslide.js"></script>
+
+    <link href="../Styles/highslide.css" rel="stylesheet" type="text/css" />
+    <!-- This javascript handles the lightbox -->
+
+    <script type="text/javascript" src="../JavaScript/JQuerPopup/highslide-functionality.js"></script>
+
+    <!-- This javascript handles the lightbox functionality -->
+
+    <script type="text/javascript" src="../JavaScript/JQuerPopup/hide-elements.js"></script>
+
+    <!-- hides the lightboxes on this page -->
+
+    <script type="text/javascript" src="../JavaScript/JQuerPopup/small-lightbox.js"></script>
+
+    <!-- This javascript shows the confirmation message, but it should be activated on postback, not on click. -->
+
+    <script type="text/javascript" src="../JavaScript/JQuerPopup/lightbox-close.js"></script>
+
+    <!-- prevents the page from jumping to the top when lightbox is closed -->
+    <%--<script language="javascript" type="text/javascript" src="../JavaScript/curvycorners.src.js"></script>--%>
+</head>
+<body class="body_account">
+    <form id="form1" runat="server">
+    <asp:ScriptManager ID="scriptmanager1" runat="server">
+    </asp:ScriptManager>
+    <div class="main">
+        <div class="logo_login">
+            <a href="#"></a>
+        </div>
+        <div class="clear">
+        </div>
+        <div class="topnav">
+            <a href="../Users/EditAccount.aspx">My Account</a><span> . </span><a href="../Users/UserContract.aspx">
+                My Contract</a><span> . </span><a href="../Users/UserWorkShift.aspx">My Work Shifts</a><span>
+                    . </span><a href="../Users/Payments.aspx">My Payments</a><span> . </span>
+            
+            <a id="ankMessages" runat="server" href="../Users/Messages.aspx">
+                My Messages</a>
+            <%-- <a href="#" class="logout"></a>--%>
+            <asp:LinkButton ID="lnkLogout" runat="server" CssClass="logout" OnClick="lnkLogout_Click"></asp:LinkButton>
+        </div>
+        <div class="clear_40">
+        </div>
+        <%-- <div class="graybox_account">
+            <div class="top"></div>
+            <div class="clear"></div>
+            <div class="centermiddle">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+    <div class="bottom"></div>
+            
+    
+    <div class="clear_75">
+    </div>
+    </div>--%>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="footer_main">
+        <div class="footer">
+            Copyright © 2011 West. All rights reserved.<br />
+            <span>Designed & Developed by <a href="http://www.leadconcept.com" target="_blank">LEADconcept</a></span></div>
+    </div>
+    </form>
+</body>
+</html>

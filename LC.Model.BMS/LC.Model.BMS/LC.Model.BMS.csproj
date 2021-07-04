@@ -1,0 +1,206 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AEA6FB1C-27B8-4F28-BADF-EE6ECC824EE6}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LC.Model.BMS</RootNamespace>
+    <AssemblyName>LC.Model.BMS</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MyGeneration.dOOdads, Version=5.0.0.0, Culture=neutral">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\MyGeneration.dOOdads.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BLL\tblAcessLevel.cs" />
+    <Compile Include="BLL\tblAdminExpenses.cs" />
+    <Compile Include="BLL\tblBaseCategories.cs" />
+    <Compile Include="BLL\tblBaseOrder.cs" />
+    <Compile Include="BLL\tblColorCodes.cs" />
+    <Compile Include="BLL\tblCompanies.cs" />
+    <Compile Include="BLL\tblCompanyAddresses.cs" />
+    <Compile Include="BLL\tblCompanyEmails.cs" />
+    <Compile Include="BLL\tblCompanyFaxes.cs" />
+    <Compile Include="BLL\tblCompanyPhones.cs" />
+    <Compile Include="BLL\tblContactPeople.cs" />
+    <Compile Include="BLL\tblCountries.cs" />
+    <Compile Include="BLL\tblDayComments.cs" />
+    <Compile Include="BLL\tblDays.cs" />
+    <Compile Include="BLL\tblDepartmentProducts.cs" />
+    <Compile Include="BLL\tblDepartments.cs" />
+    <Compile Include="BLL\tblDepartmentSuppliers.cs" />
+    <Compile Include="BLL\tblECUserAssignments.cs" />
+    <Compile Include="BLL\tblExpanseCategory.cs" />
+    <Compile Include="BLL\tblExpanses.cs" />
+    <Compile Include="BLL\tblFaxes.cs" />
+    <Compile Include="BLL\tblIncome.cs" />
+    <Compile Include="BLL\tblIncomTypes.cs" />
+    <Compile Include="BLL\tblManagerDayOff.cs" />
+    <Compile Include="BLL\tblManagerPorposal.cs" />
+    <Compile Include="BLL\tblMessages.cs" />
+    <Compile Include="BLL\tblOrderDetail.cs" />
+    <Compile Include="BLL\tblOrderInvoices.cs" />
+    <Compile Include="BLL\tblOrders.cs" />
+    <Compile Include="BLL\tblOrderStatus.cs" />
+    <Compile Include="BLL\tblPositions.cs" />
+    <Compile Include="BLL\tblProductPackages.cs" />
+    <Compile Include="BLL\tblProductPackingQuantityRel.cs" />
+    <Compile Include="BLL\tblProductQuantities.cs" />
+    <Compile Include="BLL\tblProducts.cs" />
+    <Compile Include="BLL\tblRegisterHistory.cs" />
+    <Compile Include="BLL\tblRegisters.cs" />
+    <Compile Include="BLL\tblReply.cs" />
+    <Compile Include="BLL\tblSalaryTypes.cs" />
+    <Compile Include="BLL\tblSettings.cs" />
+    <Compile Include="BLL\tblSmallChange.cs" />
+    <Compile Include="BLL\tblSpeciality.cs" />
+    <Compile Include="BLL\tblSpecialityType.cs" />
+    <Compile Include="BLL\tblSpecialPeopleWorkshift.cs" />
+    <Compile Include="BLL\tblSpecialUser.cs" />
+    <Compile Include="BLL\tblStartupCapital.cs" />
+    <Compile Include="BLL\tblSubCategories.cs" />
+    <Compile Include="BLL\tblSupplier.cs" />
+    <Compile Include="BLL\tblSupplierAddresses.cs" />
+    <Compile Include="BLL\tblSupplierBaseCats.cs" />
+    <Compile Include="BLL\tblSupplierEmails.cs" />
+    <Compile Include="BLL\tblSupplierFaxes.cs" />
+    <Compile Include="BLL\tblSupplierPhone.cs" />
+    <Compile Include="BLL\tblSupplierProductPrices.cs" />
+    <Compile Include="BLL\tblSupplierProducts.cs" />
+    <Compile Include="BLL\tblSupplierSubCats.cs" />
+    <Compile Include="BLL\tblTransactions.cs" />
+    <Compile Include="BLL\tblUserAccessLevel.cs" />
+    <Compile Include="BLL\tblUserAddresses.cs" />
+    <Compile Include="BLL\tblUserAdvances.cs" />
+    <Compile Include="BLL\tblUserBonuses.cs" />
+    <Compile Include="BLL\tblUserContract.cs" />
+    <Compile Include="BLL\tblUserDepartment.cs" />
+    <Compile Include="BLL\tblUserEmails.cs" />
+    <Compile Include="BLL\tblUserInBox.cs" />
+    <Compile Include="BLL\tblUserMobile.cs" />
+    <Compile Include="BLL\tblUserPayments.cs" />
+    <Compile Include="BLL\tblUsers.cs" />
+    <Compile Include="BLL\tblUserSentBox.cs" />
+    <Compile Include="BLL\tblUserSpeciality.cs" />
+    <Compile Include="BLL\tblUserWeeklyPayments.cs" />
+    <Compile Include="BLL\tblUserWorkshifts.cs" />
+    <Compile Include="BLL\tblVAT.cs" />
+    <Compile Include="Class1.cs" />
+    <Compile Include="DAL\_tblAcessLevel.cs" />
+    <Compile Include="DAL\_tblAdminExpenses.cs" />
+    <Compile Include="DAL\_tblBaseCategories.cs" />
+    <Compile Include="DAL\_tblBaseOrder.cs" />
+    <Compile Include="DAL\_tblColorCodes.cs" />
+    <Compile Include="DAL\_tblCompanies.cs" />
+    <Compile Include="DAL\_tblCompanyAddresses.cs" />
+    <Compile Include="DAL\_tblCompanyEmails.cs" />
+    <Compile Include="DAL\_tblCompanyFaxes.cs" />
+    <Compile Include="DAL\_tblCompanyPhones.cs" />
+    <Compile Include="DAL\_tblContactPeople.cs" />
+    <Compile Include="DAL\_tblCountries.cs" />
+    <Compile Include="DAL\_tblDayComments.cs" />
+    <Compile Include="DAL\_tblDays.cs" />
+    <Compile Include="DAL\_tblDepartmentProducts.cs" />
+    <Compile Include="DAL\_tblDepartments.cs" />
+    <Compile Include="DAL\_tblDepartmentSuppliers.cs" />
+    <Compile Include="DAL\_tblECUserAssignments.cs" />
+    <Compile Include="DAL\_tblExpanseCategory.cs" />
+    <Compile Include="DAL\_tblExpanses.cs" />
+    <Compile Include="DAL\_tblFaxes.cs" />
+    <Compile Include="DAL\_tblIncome.cs" />
+    <Compile Include="DAL\_tblIncomTypes.cs" />
+    <Compile Include="DAL\_tblManagerDayOff.cs" />
+    <Compile Include="DAL\_tblManagerPorposal.cs" />
+    <Compile Include="DAL\_tblMessages.cs" />
+    <Compile Include="DAL\_tblOrderDetail.cs" />
+    <Compile Include="DAL\_tblOrderInvoices.cs" />
+    <Compile Include="DAL\_tblOrders.cs" />
+    <Compile Include="DAL\_tblOrderStatus.cs" />
+    <Compile Include="DAL\_tblPositions.cs" />
+    <Compile Include="DAL\_tblProductPackages.cs" />
+    <Compile Include="DAL\_tblProductPackingQuantityRel.cs" />
+    <Compile Include="DAL\_tblProductQuantities.cs" />
+    <Compile Include="DAL\_tblProducts.cs" />
+    <Compile Include="DAL\_tblRegisterHistory.cs" />
+    <Compile Include="DAL\_tblRegisters.cs" />
+    <Compile Include="DAL\_tblReply.cs" />
+    <Compile Include="DAL\_tblSalaryTypes.cs" />
+    <Compile Include="DAL\_tblSettings.cs" />
+    <Compile Include="DAL\_tblSmallChange.cs" />
+    <Compile Include="DAL\_tblSpeciality.cs" />
+    <Compile Include="DAL\_tblSpecialityType.cs" />
+    <Compile Include="DAL\_tblSpecialPeopleWorkshift.cs" />
+    <Compile Include="DAL\_tblSpecialUser.cs" />
+    <Compile Include="DAL\_tblStartupCapital.cs" />
+    <Compile Include="DAL\_tblSubCategories.cs" />
+    <Compile Include="DAL\_tblSupplier.cs" />
+    <Compile Include="DAL\_tblSupplierAddresses.cs" />
+    <Compile Include="DAL\_tblSupplierBaseCats.cs" />
+    <Compile Include="DAL\_tblSupplierEmails.cs" />
+    <Compile Include="DAL\_tblSupplierFaxes.cs" />
+    <Compile Include="DAL\_tblSupplierPhone.cs" />
+    <Compile Include="DAL\_tblSupplierProductPrices.cs" />
+    <Compile Include="DAL\_tblSupplierProducts.cs" />
+    <Compile Include="DAL\_tblSupplierSubCats.cs" />
+    <Compile Include="DAL\_tblTransactions.cs" />
+    <Compile Include="DAL\_tblUserAccessLevel.cs" />
+    <Compile Include="DAL\_tblUserAddresses.cs" />
+    <Compile Include="DAL\_tblUserAdvances.cs" />
+    <Compile Include="DAL\_tblUserBonuses.cs" />
+    <Compile Include="DAL\_tblUserContract.cs" />
+    <Compile Include="DAL\_tblUserDepartment.cs" />
+    <Compile Include="DAL\_tblUserEmails.cs" />
+    <Compile Include="DAL\_tblUserInBox.cs" />
+    <Compile Include="DAL\_tblUserMobile.cs" />
+    <Compile Include="DAL\_tblUserPayments.cs" />
+    <Compile Include="DAL\_tblUsers.cs" />
+    <Compile Include="DAL\_tblUserSentBox.cs" />
+    <Compile Include="DAL\_tblUserSpeciality.cs" />
+    <Compile Include="DAL\_tblUserWeeklyPayments.cs" />
+    <Compile Include="DAL\_tblUserWorkshifts.cs" />
+    <Compile Include="DAL\_tblVAT.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

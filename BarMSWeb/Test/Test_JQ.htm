@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+
+    <script src="../JavaScript/jquery-1.6.2.min.js" type="text/javascript"></script>
+
+    <style type="text/css">
+        .chkClass
+        {
+            color: Red;
+        }
+    </style>
+
+    <script type="text/javascript">
+        $(document).ready(function() {
+            //alert('hi');
+            var chk = $("chkClass");
+            //.addClass("chkClass");
+            chk.value = "aa";
+        });
+       
+    </script>
+
+</head>
+<body>
+    <input type="radio" id="rb1" name="a"  value="abc"/>
+    <span class="chkClass">hi how r u</span>
+    <br />
+    <input type="radio" id="rb2" name="a" />
+    <span class="chkClass">Radio button 2</span>
+</body>
+</html>
